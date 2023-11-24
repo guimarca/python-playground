@@ -7,10 +7,10 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def hello_world():
+def hello_world() -> str:
     return "<p>Hello, World!</p>"
 
 
 @app.route("/<name>")
-def hello(name):
+def hello(name: str) -> str:
     return f"Hello, {escape(name)}!"
