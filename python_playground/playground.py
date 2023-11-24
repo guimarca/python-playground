@@ -1,8 +1,8 @@
 import typing as t
 
 
-def my_func() -> t.Any:
-    return
+def my_func(a: str) -> t.Any:
+    return 1
 
 
 print("Python test playground")
